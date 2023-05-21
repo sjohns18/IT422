@@ -1,0 +1,5 @@
+$Action = New-ScheduledTaskAction -Execute 'pwsh.exe' -Argument 'Get-Eventlog -LogName Security -After ((Get-Date).Date.AddDays(-30)) | Export-Csv "c:\Users\<username>\Desktop\30dayssecurity.csv"'
+$Trigger = New-ScheduledTaskTrigger -Once -At 7:45pm
+$Settings = New-ScheduledTaskSettingsSet
+$Task = New-ScheduledTask -Action $Action -Trigger $Trigger -Settings $Settings
+Register-ScheduledTask -TaskName 'My PowerShell Security Event Script' -InputObject $Task
